@@ -7,7 +7,7 @@
 ## Objective / use case
 
 
-## Interactions ( What uses or where it used_
+## Interactions (What uses or where it used)
 
 
 ## flowchart / Design
