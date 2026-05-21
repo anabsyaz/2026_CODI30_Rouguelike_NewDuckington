@@ -76,7 +76,12 @@ It's a text-based rogue-like RPG with a turn based combat system.
         - Increment by 1 at the start of your turn
         - Used for skills
     - Health
-        - 
+    - ATK (damage done)
+    - DEF (damage reduction) 
+    - NRG (prevents skill card spamming)
+    - SPD (evasion; avoid all damage, influences flee chances)
+    - LCK (influence crit and drops) (start with ~2%)
+    - Stats scale with level, you get ~1/level stat points to allocate specifically to individual stats to create different builds
 
 
 ## Story / Theme
