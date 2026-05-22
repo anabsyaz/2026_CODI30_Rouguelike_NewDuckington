@@ -12,9 +12,6 @@
 ## Interface
 
 
-## Story
-
-
 ## Story / Theme
 
 
