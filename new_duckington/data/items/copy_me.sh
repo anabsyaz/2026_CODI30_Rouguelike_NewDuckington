@@ -11,6 +11,8 @@ item_effect() {
     # This function defines the effect of the item when used by the player.
     # You can modify the player's stats or inventory here.
     echo "You used $ITEM_NAME, but nothing happened."
+    # save the game
+    # save_player_data
 }
 ITEM_RARITY="Legendary" # Rarity of the item, which can be "Common", "Uncommon", "Rare", "Epic", "Legendary"
 ITEM_NUMBER=001 # Unique identifier for the item

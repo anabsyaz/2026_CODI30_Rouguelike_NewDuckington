@@ -1,11 +1,9 @@
 #!/bin/bash
+set -e
 
-export GAME_ROOT="$(dirname "$0")/.."
-source "$GAME_ROOT/system/stats.sh"
-source "$GAME_ROOT/data/items/items_manager.sh"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export GAME_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+source "$GAME_ROOT/save/save_game.sh"
+source "$GAME_ROOT/save/load_game.sh"
+
 load_player_data
-display_player_stats
-get_item_pool
-test_use_item
-display_player_stats
-save_player_data

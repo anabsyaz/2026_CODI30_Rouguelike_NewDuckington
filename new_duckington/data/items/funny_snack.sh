@@ -10,6 +10,7 @@ item_effect() {
     # Sets HP to 0
     PLAYER_HP=0
     echo "You have escaped reality! But at what cost? Your HP has dropped to 0."
+    save_player_data
 }
 ITEM_RARITY="Legendary"
 ITEM_NUMBER=002
