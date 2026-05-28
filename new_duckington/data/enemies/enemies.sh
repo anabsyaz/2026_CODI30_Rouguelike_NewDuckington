@@ -1,7 +1,0 @@
-#!/bin/bash
-
-ENEMY_NAME="Grizzled Mauler"
-ENEMY_HP=75
-ENEMY_HP_MAX=75
-ENEMY_ATK=13
-ENEMY_DEF=6
