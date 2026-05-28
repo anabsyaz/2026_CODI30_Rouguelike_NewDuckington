@@ -43,8 +43,8 @@ levels_level_up() {
     PLAYER_STAT_POINTS=$((PLAYER_STAT_POINTS + 1))
 
     # Base level bonuses (apply immediately on level-up):
-    PLAYER_HP_MAX=$(( ${PLAYER_HP_MAX:-0} + 1 ))
-    PLAYER_HP=$(( ${PLAYER_HP:-0} + 1 ))
+    PLAYER_HP_MAX=$(( ${PLAYER_HP_MAX:-0} + 10 ))
+    PLAYER_HP=$(( ${PLAYER_HP:-0} + 10 ))
     PLAYER_ATK=$(( ${PLAYER_ATK:-0} + 1 ))
     PLAYER_DEF=$(( ${PLAYER_DEF:-0} + 1 ))
     PLAYER_NRG_MAX=$(( ${PLAYER_NRG_MAX:-0} + 1 ))
