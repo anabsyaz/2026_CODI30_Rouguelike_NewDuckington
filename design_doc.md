@@ -95,6 +95,7 @@ The bears, being unorganized, failed in their attempts to attack the alliance. H
 You play as one of the few surviving ducks, driven by vengeance and determined to hunt down the bear and dragon duo responsible for the destruction.
 
 ## Progression of Events
+(*character selection when starting the game)
 
 You begin the story at Whispering Waters
 
@@ -106,6 +107,9 @@ The ducks arrive at the bears fortress. It is LOCKED and you cannot enter withou
 
 Ducks storm the Bear castle/fortress and fight for vengeance. 
 They progress through each floor, until reaching the boss bear on the top floor.
+After wounding the bear and getting them down to a low HP, there is a turn of events...
+The dragon betrays the bear and kills the bear. The dragon now attacks the ducks.
+You must fight to survive.
 
 ## Concept
 - Turn-based
