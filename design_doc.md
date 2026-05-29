@@ -88,28 +88,33 @@ It's a text-based rogue-like RPG with a turn based combat system.
 
 ## Story
 
-It's a rogue-like game set in a world where ducks and bears are at war. There is an organization called New Duckington beside a pond known as Whispering Waters. Ducks from all around the world gathered there to form an alliance against the bears.
+It's a rogue-like game set in a world where ducks and bears are at war. 
+The bears, being unorganized, failed in their attempts to attack the alliance. However, one bear rose above the others and formed a pact with a dragon. Together, they launched a devastating assault that massacred the ducks of Whispering Waters. 
+There is an organization called New Duckington beside a pond known as Whispering Waters. Ducks from all around the world gathered there to form an alliance against the bears after the massacre.
 
-The bears, being unorganized, failed in their attempts to attack the alliance. However, one bear rose above the others and formed a pact with a dragon. Together, they launched a devastating assault that massacred the ducks of Whispering Waters.
 
 You play as one of the few surviving ducks, driven by vengeance and determined to hunt down the bear and dragon duo responsible for the destruction.
 
 ## Progression of Events
 (*character selection when starting the game)
 
-You begin the story at Whispering Waters
+You begin the story at Whispering Waters. The backstory runs for the player to read but is interupted by a crash.
 
 An asteriod falls out of the sky and lands in the distance, radiating a magical aura. The ducks race towards the asteroid against the bears (and win; cannot advance if the duck loses the race). The ducks gain superpowers from the asteroid. 
 --> the player must complete some sort of task in order to win (TBD) 
 
 The ducks arrive at the bears fortress. It is LOCKED and you cannot enter without a passcode. 
---> the player must complete a puzzle to obtain the passcode
+--> the player must complete a puzzle to obtain the passcode (TBD)
+
+Throughout the game and the progression of these introductory events, these are popup options to choose a path to obtain abilities & weapons. (see zenity)
 
 Ducks storm the Bear castle/fortress and fight for vengeance. 
-They progress through each floor, until reaching the boss bear on the top floor.
-After wounding the bear and getting them down to a low HP, there is a turn of events...
-The dragon betrays the bear and kills the bear. The dragon now attacks the ducks.
-You must fight to survive.
+They progress through each of the 10 floors, until reaching the boss bear on the top floor.
+--> The player strikes first. It is a turn-based system.
+After wounding the boss bear and getting them down to a low HP (Ex: 20% HP), there is a turn of events...
+Lord Draco betrays the bears and kills the boss bear. The dragon now attacks the ducks.
+You must fight to survive. Use all you collected items and skills to do so.
+Once the dragon is defeated, you win the game and establish New Duckington. If the battle is lost, Lord Draco conquers all.
 
 ## Concept
 - Turn-based
