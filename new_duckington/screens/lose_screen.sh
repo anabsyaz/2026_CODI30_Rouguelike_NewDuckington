@@ -3,6 +3,8 @@
 #put this inside the if player loses statement
 #feel free to change the spacing
 
+lose_screen() {
+
 echo "--------------------------------------------------------------------------------
 
 ██████╗ ███████╗███████╗███████╗ █████╗ ████████╗
@@ -26,5 +28,5 @@ You made it to floor $floor
 
 Do you want to restart (yes/no)?
 
-
 --------------------------------------------------------------------------------"
+}

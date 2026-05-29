@@ -2,7 +2,7 @@
 # This is an example for how to get the player's data and change it
 
 # This is how you get loading and saving functions from the script
-export GAME_ROOT="$(dirname "$0")/.."
+source new_duckington/main.sh
 source "$GAME_ROOT/system/stats.sh"
 
 # This is the function from stats.sh, it will load all the player's data to the local memory so you can use it.

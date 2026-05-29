@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # import what you need here, for example:
-# export GAME_ROOT="$(dirname "$0")/.."
+# source new_duckington/main.sh
 # source "$GAME_ROOT/system/stats.sh"
 
 ITEM_NAME="Copy Me" # Name of the item that will be displayed by the game
@@ -16,3 +16,5 @@ item_effect() {
 }
 ITEM_RARITY="Legendary" # Rarity of the item, which can be "Common", "Uncommon", "Rare", "Epic", "Legendary"
 ITEM_NUMBER=001 # Unique identifier for the item
+ITEM_COST=0 # Cost of the item in the shop, if it's a shop item. You can set it to 0 if it's not a shop item.
+ITEM_SELL=0 # Sell price of the item in the shop, if it's a shop item. You can set it to 0 if it's unsellable.

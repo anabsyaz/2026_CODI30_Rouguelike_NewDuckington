@@ -62,9 +62,20 @@ display_player_items() {
     echo "╔═══════════════════════════════════════════╗"
     echo "║              PLAYER  ITEMS                ║"
     echo "╠═══════════════════════════════════════════╣"
-    printf "║  Items: %-33s ║\n" "$PLAYER_ITEMS"
-    echo "║  Type the command 'show_item [item name]' ║"
-    echo "║  to see the details of an item.           ║"
+
+    if [ ${#PLAYER_ITEMS[@]} -eq 0 ]; then
+        printf "║  %-40s ║\n" "None"
+    fi
+    
+    local i=1
+    for item in "${PLAYER_ITEMS[@]}"; do
+        printf "║  [%2d] %-35.35s ║\n" "$i" "$item"
+        ((i++))
+    done
+
+    echo "╠═══════════════════════════════════════════╣"
+    echo "║  show_item <item name>                    ║"
+    echo "║  use_item <item name>                     ║"
     echo "╚═══════════════════════════════════════════╝"
 }
 

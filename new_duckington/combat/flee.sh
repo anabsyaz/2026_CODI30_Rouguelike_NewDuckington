@@ -31,3 +31,4 @@ else
 	echo "you have failed to escape"
 	#return to combat (opponents turn)
 fi
+

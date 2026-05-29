@@ -1,6 +1,5 @@
 #!/bin/bash
-
-export GAME_ROOT="$(dirname "$0")/.."
+source new_duckington/main.sh
 source "$GAME_ROOT/system/stats.sh"
 
 ITEM_NAME="Funny Snack"
@@ -14,3 +13,5 @@ item_effect() {
 }
 ITEM_RARITY="Legendary"
 ITEM_NUMBER=002
+ITEM_COST=0
+ITEM_SELL=1
