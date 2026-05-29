@@ -3,6 +3,8 @@
 export GAME_ROOT="$(dirname "$0")/.."
 source "$GAME_ROOT/system/stats.sh"
 source "$GAME_ROOT/data/enemies/ememy_example.sh"
+source "$GAME_ROOT/combat/attack.sh"
+source "$GAME_ROOT/combat/flee.sh"
 source "$GAME_ROOT/screens/lose_screen.sh"
 
 load_player_data
@@ -47,25 +49,26 @@ while [[ $battle_end == false ]]; do
 
 	    case $action in
 	        1|attack|Attack)
-	            clear
+	            
 	            echo -e "${RED}You attack the enemy!${NC}"
-	            bash attack.sh
+	            attack
+
 	            ;;
 	            
 	        2|skill|Skill)
-	            clear
+	            
 	            echo -e "${BLUE}You prepare a skill...${NC}"
 	            bash skill.sh
 	            ;;
 	            
 	        3|item|Item)
-	            clear
+	            
 	            echo -e "${YELLOW}Opening inventory...${NC}"
 	            bash item.sh
 	            ;;
 	            
 	        4|flee|Flee)
-	            clear
+	            
 	            echo -e "${GREEN}You attempt to flee!${NC}"
 	            bash flee.sh
 	            ;;
@@ -77,6 +80,9 @@ while [[ $battle_end == false ]]; do
 	            bash combat_manager.sh
 	            ;;
 	    esac
+
+	    sleep 1
+
 	    player_turn=false
 	    
 	done
@@ -97,14 +103,14 @@ while [[ $battle_end == false ]]; do
 	    DAMAGE_TAKEN=$(($ENEMY_ATK-$PLAYER_DEF))
 
 	    echo -e "you have taken $DAMAGE_TAKEN damage"
-	    PLAYER_HP=$(($PLAYER_HP-$DAMAGE_TAKEN-999))
+	    PLAYER_HP=$(($PLAYER_HP-$DAMAGE_TAKEN))
 
 		if [[ $PLAYER_HP -lt 1 ]]; then
 	    	PLAYER_HP=0
 		fi
 
 	   	echo "You now have $PLAYER_HP HP remaining"
-	    read hi
+	    read -p "press enter to continue: " hi
 	    player_turn=true
 
 	    if [[ $PLAYER_HP == 0 ]]; then
